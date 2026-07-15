@@ -56,7 +56,7 @@ tasks.register("runWebTests", Test) {
     classpath = sourceSets.test.runtimeClasspath
     outputs.upToDateWhen { false }
     filter {
-        includeTestsMatching 'com.ilhamyp.Web.Runner.webTestRunner'
+        includeTestsMatching 'com.ilhamyp.web.runner.WebTestRunner'
     }
 
     description = 'Run Web tests with Cucumber'

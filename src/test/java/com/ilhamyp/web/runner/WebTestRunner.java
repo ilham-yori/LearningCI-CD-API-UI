@@ -1,0 +1,15 @@
+package com.ilhamyp.web.runner;
+
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = {"src/test/resources/features/web"},
+        glue = {"com.ilhamyp.web.steps", "com.ilhamyp.web.common"},
+        plugin = {"pretty","html:target/cucumber-report/web.html"}
+)
+public class WebTestRunner {
+}
